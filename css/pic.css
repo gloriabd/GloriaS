@@ -1,0 +1,146 @@
+:root {
+    --white: #dedad6;
+    --black: #212529;
+    --true-white: #FFFFFF;
+    --true-black: #000000;
+    --white-hover: #b3aea9;
+    --staff: #36393f;
+    --staff-hover: #3f4249;
+    --staff-text: #cccccc;
+    --box-shadow: #1f1f1f;
+    --white2: #ebe9e5;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Source Sans Pro';
+    align-items: center;
+}
+
+.main__body {
+    display: flex;
+}
+
+.top__manu__bar {
+    width: 100vw;
+    height: 10vh;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    align-items: center;
+    background-color: var(--black);
+    padding-top: 3vh;
+    color: var(--true-white);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.mobile__options {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70vw;
+    height: 5vh;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--true-white);
+    text-decoration: none;
+    display: none;
+    border: 10px;
+    border-radius: 30px;
+    background-color: var(--staff);
+    line-height: 5vh;
+    margin-left: 15vw;
+}
+
+.side__manu__bar {
+    width: 20vw;
+    height: 90vh;
+    background-color: var(--black);
+    align-items: center;
+    position: fixed;
+}
+
+button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--white);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.back {
+    top: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--white);
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+button {
+    width: 20vw;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s;
+    color: var(--black);
+}
+
+button:hover {
+    background-color: var(--white-hover);
+}
+
+button > i {
+    color: var(--white);
+}
+
+.img {
+    padding-left: 35vw;
+}
+
+.img > div > img {
+    width: 50vw;
+}
+
+@media screen and (max-width: 426px) {
+    .top__manu__bar {
+        font-size: medium;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        height: 3vh;
+    }
+
+    .mobile__options {
+        display: block;
+    }
+
+    .side__manu__bar > button {
+        display: none;
+    }
+
+    .side__manu__bar {
+        display: none;
+    }
+
+    .img {
+        padding-left: 15vw;
+    }
+
+    .img > div > img {
+        width: 70vw;
+    }
+}
